@@ -15,55 +15,6 @@
     <div id="wrapper">
       <div id="div1"></div>
     </div>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      *::before {
-        box-sizing: border-box;
-      }
-      *::after {
-        box-sizing: border-box;
-      }
-      #html {
-        word-break: break-all;
-      }
-      #div1 {
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 20px;
-      }
-      #div1::before {
-        content: "";
-        display: block;
-
-        position: absolute;
-      }
-      #div1::after {
-        content: "";
-        display: block;
-        position: absolute;
-      }
-      @media (max-width: 500px) {
-        #wrapper {
-          height: 50vh;
-          position: relative;
-        }
-        #html {
-          position: static;
-          top: 0;
-        }
-        #div1 {
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          position: relative;
-        }
-      }
-    </style>
     <script src="main.js"></script>
   </body>
 </html>
